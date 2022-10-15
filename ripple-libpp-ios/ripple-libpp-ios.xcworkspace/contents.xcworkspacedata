@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:ripplelibppdemo/ripplelibppdemo.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ripplelibpp/ripplelibpp.xcodeproj">
+   </FileRef>
+</Workspace>

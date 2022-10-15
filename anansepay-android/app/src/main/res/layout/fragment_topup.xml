@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.vpay365.payments.TopupFragment"
+    >
+
+    <RadioGroup
+        android:id="@+id/currencyRadioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@id/radio_btc">
+
+        <RadioButton android:id="@+id/radio_cny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cny"
+            android:enabled="false"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_btc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btc"
+            android:onClick="onRadioButtonClicked"/>
+
+    </RadioGroup>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/amountEditTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/amount"
+        android:inputType="number"
+        app:met_floatingLabel="normal"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/currencyRadioGroup" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/btcIntructionsTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btc_transfer_text"
+        app:layout_constraintTop_toBottomOf="@id/currencyRadioGroup"/>
+
+    <Button
+        android:id="@+id/btcTopUpAddressButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btc"
+        android:background="@drawable/vpay_state_button"
+        app:layout_constraintTop_toBottomOf="@id/btcIntructionsTextField"/>
+
+    <Button
+        android:id="@+id/topupButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_top_up"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:background="@drawable/vpay_state_button"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <WebView
+        android:id="@+id/feelpayWebview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</android.support.constraint.ConstraintLayout>

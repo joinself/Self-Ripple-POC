@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.vpay365.payments.TransferFragment">
+
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+        android:id="@+id/recipientAutoCompleteEditTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/recipient_address"
+        android:inputType="textNoSuggestions"
+        app:met_floatingLabel="normal"
+        app:layout_constraintTop_toBottomOf="@id/currencyRadioGroup" />
+
+    <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+        android:id="@+id/nameAutoCompleteEditTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/label"
+        android:inputType="textNoSuggestions"
+        app:met_floatingLabel="normal"
+        app:layout_constraintTop_toBottomOf="@id/recipientAutoCompleteEditTextField" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save_contact"
+        android:textAllCaps="false"
+        android:enabled="false"
+        android:background="@drawable/vpay_state_button"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,6 @@
+framework module ripplelibpp {
+  umbrella header "ripplelibpp.h"
+
+  export *
+  module * { export * }
+}

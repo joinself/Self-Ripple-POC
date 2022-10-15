@@ -1,0 +1,46 @@
+import os ;
+local NDK = [ os.environ ANDROID_NDK_ROOT ] ;
+local NDK_HOST = [ os.environ ANDROID_NDK_HOST ] ;
+local NDK_PLATFORM = [ os.environ ANDROID_NDK_PLATFORM ] ;
+local TARGET_ARCH = [ os.environ ANDROID_TARGET_ARCH ] ;
+
+# --------------------------------------------------------------------
+
+using gcc : android
+:
+$(NDK)/toolchains/aarch64-linux-android-4.9/prebuilt/$(NDK_HOST)/bin/aarch64-linux-android-g++
+:
+<archiver>$(NDK)/toolchains/aarch64-linux-android-4.9/prebuilt/$(NDK_HOST)/bin/aarch64-linux-android-ar
+<compileflags>-fexceptions
+<compileflags>-frtti
+#<compileflags>-Wall
+<compileflags>-fvisibility=hidden
+<compileflags>-fvisibility-inlines-hidden
+<compileflags>-Wno-psabi
+# Configuration taken from $(NDK)/toolchains/aarch64-linux-android-4.9/setup.mk
+<compileflags>-fpic
+<compileflags>-ffunction-sections
+<compileflags>-funwind-tables
+<compileflags>-fstack-protector
+<compileflags>-no-canonical-prefixes
+<compileflags>-std=gnu++0x
+<compileflags>-Wa,--noexecstack
+<compileflags>-DANDROID
+<compileflags>-D__ANDROID__
+<compileflags>-isystem$(NDK)/sysroot/usr/include
+<compileflags>-isystem$(NDK)/sysroot/usr/include/aarch64-linux-android
+<compileflags>-I$(NDK)/sources/cxx-stl/llvm-libc++/include
+<linkflags>-no-canonical-prefixes
+# 'Release/ARM' section
+<compileflags>-O2
+<compileflags>-g
+<compileflags>-DNDEBUG
+<compileflags>-fomit-frame-pointer
+<compileflags>-fstrict-aliasing
+<compileflags>-funswitch-loops
+<compileflags>-finline-limit=300
+# Various
+<cxxflags>-D_REENTRANT
+;
+
+option.set keep-going : false ;

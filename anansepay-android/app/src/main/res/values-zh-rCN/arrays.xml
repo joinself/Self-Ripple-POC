@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lock_times">
+        <item>1 分钟</item>
+        <item>2 分钟</item>
+        <item>3 分钟</item>
+        <item>4 分钟</item>
+        <item>5 分钟</item>
+        <item>无</item>
+    </string-array>
+
+    <string-array name="lock_durations">
+        <item>60000</item>
+        <item>120000</item>
+        <item>180000</item>
+        <item>240000</item>
+        <item>320000</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="backup_options">
+        <item>使用其它应用分享（警告）</item>
+        <item>分享二维码，或使用其它应用储存二维码（警告）</item>
+    </string-array>
+
+</resources>

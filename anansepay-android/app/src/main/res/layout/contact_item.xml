@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/nameTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/list_standard_text_size"
+        android:text="Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:paddingTop="@dimen/margin"
+        android:paddingLeft="@dimen/margin"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/addressTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/light_gray_vpay"
+        android:textSize="@dimen/address_list_text_size"
+        android:paddingLeft="@dimen/margin"
+        app:layout_constraintTop_toBottomOf="@id/nameTextField"
+        android:text="address"
+        />
+
+</android.support.constraint.ConstraintLayout>

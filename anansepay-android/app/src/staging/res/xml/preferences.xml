@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/pref_category_security"
+        android:key="pref_key_security_settings">
+
+        <Preference
+            android:key="setPasscode"
+            android:title="@string/set_passcode">
+            <intent
+                android:targetPackage="com.vpay365.payments.staging"
+                android:targetClass="com.vpay365.payments.MainActivity" android:action="ACTION_SET_PASSCODE">
+                <!--<extra android:name="type" android:value="0" />-->
+            </intent>
+        </Preference>
+
+        <Preference
+            android:key="disablePasscode"
+            android:title="@string/disable_passcode">
+            <intent
+                android:targetPackage="com.vpay365.payments.staging"
+                android:targetClass="com.vpay365.payments.MainActivity" android:action="ACTION_DISABLE_PASSCODE">
+                <!--<extra android:name="type" android:value="1" />-->
+            </intent>
+        </Preference>
+
+        <ListPreference
+            android:title="@string/pref_title_passcode_timeout"
+            android:key="@string/pref_key_screen_lock_timeout"
+            android:entries="@array/lock_times"
+            android:entryValues="@array/lock_durations"
+            android:defaultValue="60000"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

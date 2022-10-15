@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D5B34321F17A0DA0029B68A /* ripplelibpp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5B34311F17A0DA0029B68A /* ripplelibpp.framework */; };
+		7D5B34331F17A0DA0029B68A /* ripplelibpp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7D5B34311F17A0DA0029B68A /* ripplelibpp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8A7FC1361F150BC8004DBD28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1351F150BC8004DBD28 /* main.m */; };
+		8A7FC1391F150BC8004DBD28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1381F150BC8004DBD28 /* AppDelegate.m */; };
+		8A7FC13C1F150BC8004DBD28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC13B1F150BC8004DBD28 /* ViewController.m */; };
+		8A7FC13F1F150BC8004DBD28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FC13D1F150BC8004DBD28 /* Main.storyboard */; };
+		8A7FC1411F150BC8004DBD28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FC1401F150BC8004DBD28 /* Assets.xcassets */; };
+		8A7FC1441F150BC8004DBD28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FC1421F150BC8004DBD28 /* LaunchScreen.storyboard */; };
+		928B2BDD1F17BD4B00D3EB52 /* RippleLibDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 928B2BDC1F17BD4B00D3EB52 /* RippleLibDemo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7D5B34301F17A0CE0029B68A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7D5B34331F17A0DA0029B68A /* ripplelibpp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7D5B34311F17A0DA0029B68A /* ripplelibpp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ripplelibpp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7FC1311F150BC8004DBD28 /* ripplelibppdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ripplelibppdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7FC1351F150BC8004DBD28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8A7FC1371F150BC8004DBD28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8A7FC1381F150BC8004DBD28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8A7FC13A1F150BC8004DBD28 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8A7FC13B1F150BC8004DBD28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8A7FC13E1F150BC8004DBD28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A7FC1401F150BC8004DBD28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A7FC1431F150BC8004DBD28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A7FC1451F150BC8004DBD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7FC14C1F150BF3004DBD28 /* ripplelibpp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ripplelibpp.framework; path = "../ripplelibpp/build/Debug-iphoneos/ripplelibpp.framework"; sourceTree = "<group>"; };
+		928B2BDB1F17BD4B00D3EB52 /* RippleLibDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RippleLibDemo.h; sourceTree = "<group>"; };
+		928B2BDC1F17BD4B00D3EB52 /* RippleLibDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RippleLibDemo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A7FC12E1F150BC8004DBD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D5B34321F17A0DA0029B68A /* ripplelibpp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A7FC1281F150BC8004DBD28 = {
+			isa = PBXGroup;
+			children = (
+				7D5B34311F17A0DA0029B68A /* ripplelibpp.framework */,
+				8A7FC1331F150BC8004DBD28 /* ripplelibppdemo */,
+				8A7FC1321F150BC8004DBD28 /* Products */,
+				8A7FC14B1F150BF3004DBD28 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A7FC1321F150BC8004DBD28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC1311F150BC8004DBD28 /* ripplelibppdemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A7FC1331F150BC8004DBD28 /* ripplelibppdemo */ = {
+			isa = PBXGroup;
+			children = (
+				92C4B3A51F18E6B100C82A32 /* Demo */,
+				8A7FC1371F150BC8004DBD28 /* AppDelegate.h */,
+				8A7FC1381F150BC8004DBD28 /* AppDelegate.m */,
+				8A7FC13A1F150BC8004DBD28 /* ViewController.h */,
+				8A7FC13B1F150BC8004DBD28 /* ViewController.m */,
+				8A7FC13D1F150BC8004DBD28 /* Main.storyboard */,
+				8A7FC1401F150BC8004DBD28 /* Assets.xcassets */,
+				8A7FC1421F150BC8004DBD28 /* LaunchScreen.storyboard */,
+				8A7FC1451F150BC8004DBD28 /* Info.plist */,
+				8A7FC1341F150BC8004DBD28 /* Supporting Files */,
+			);
+			path = ripplelibppdemo;
+			sourceTree = "<group>";
+		};
+		8A7FC1341F150BC8004DBD28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC1351F150BC8004DBD28 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8A7FC14B1F150BF3004DBD28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC14C1F150BF3004DBD28 /* ripplelibpp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		92C4B3A51F18E6B100C82A32 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				928B2BDB1F17BD4B00D3EB52 /* RippleLibDemo.h */,
+				928B2BDC1F17BD4B00D3EB52 /* RippleLibDemo.m */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A7FC1301F150BC8004DBD28 /* ripplelibppdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7FC1481F150BC8004DBD28 /* Build configuration list for PBXNativeTarget "ripplelibppdemo" */;
+			buildPhases = (
+				8A7FC12D1F150BC8004DBD28 /* Sources */,
+				8A7FC12E1F150BC8004DBD28 /* Frameworks */,
+				8A7FC12F1F150BC8004DBD28 /* Resources */,
+				7D5B34301F17A0CE0029B68A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ripplelibppdemo;
+			productName = ripplelibppdemo;
+			productReference = 8A7FC1311F150BC8004DBD28 /* ripplelibppdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A7FC1291F150BC8004DBD28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					8A7FC1301F150BC8004DBD28 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PJC8N7MDSQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8A7FC12C1F150BC8004DBD28 /* Build configuration list for PBXProject "ripplelibppdemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A7FC1281F150BC8004DBD28;
+			productRefGroup = 8A7FC1321F150BC8004DBD28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A7FC1301F150BC8004DBD28 /* ripplelibppdemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A7FC12F1F150BC8004DBD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7FC1441F150BC8004DBD28 /* LaunchScreen.storyboard in Resources */,
+				8A7FC1411F150BC8004DBD28 /* Assets.xcassets in Resources */,
+				8A7FC13F1F150BC8004DBD28 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A7FC12D1F150BC8004DBD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7FC13C1F150BC8004DBD28 /* ViewController.m in Sources */,
+				8A7FC1391F150BC8004DBD28 /* AppDelegate.m in Sources */,
+				928B2BDD1F17BD4B00D3EB52 /* RippleLibDemo.m in Sources */,
+				8A7FC1361F150BC8004DBD28 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A7FC13D1F150BC8004DBD28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A7FC13E1F150BC8004DBD28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A7FC1421F150BC8004DBD28 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A7FC1431F150BC8004DBD28 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A7FC1461F150BC8004DBD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A7FC1471F150BC8004DBD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A7FC1491F150BC8004DBD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PJC8N7MDSQ;
+				INFOPLIST_FILE = ripplelibppdemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ripplelibppdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8A7FC14A1F150BC8004DBD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PJC8N7MDSQ;
+				INFOPLIST_FILE = ripplelibppdemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ripplelibppdemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A7FC12C1F150BC8004DBD28 /* Build configuration list for PBXProject "ripplelibppdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7FC1461F150BC8004DBD28 /* Debug */,
+				8A7FC1471F150BC8004DBD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A7FC1481F150BC8004DBD28 /* Build configuration list for PBXNativeTarget "ripplelibppdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7FC1491F150BC8004DBD28 /* Debug */,
+				8A7FC14A1F150BC8004DBD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A7FC1291F150BC8004DBD28 /* Project object */;
+}

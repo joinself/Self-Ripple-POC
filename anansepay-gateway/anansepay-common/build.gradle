@@ -1,0 +1,7 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation files('libs/ripple-core-0.0.1-SNAPSHOT.jar')
+    implementation files('libs/ripple-client-0.0.1-SNAPSHOT.jar')
+    implementation files('libs/ripple-bouncycastle-0.0.1-SNAPSHOT.jar')
+}

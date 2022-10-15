@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#383838</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorPrimaryLight">#A1A1A1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gold_vpay">#E8D46E</color>
+    <color name="green_vpay">#3AB53A</color>
+    <color name="maroon_vpay">#DC4040</color>
+    <color name="light_gray_vpay">#DEDEDE</color>
+</resources>

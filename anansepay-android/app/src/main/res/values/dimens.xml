@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin">@dimen/fab_margin</dimen>
+    <dimen name="currency_padding">4dp</dimen>
+    <dimen name="date_textsize">10sp</dimen>
+    <dimen name="list_standard_text_size">15sp</dimen>
+    <dimen name="description_textsize">11sp</dimen>
+    <dimen name="address_list_text_size">13sp</dimen>
+    <dimen name="top_text_padding">48dp</dimen>
+</resources>

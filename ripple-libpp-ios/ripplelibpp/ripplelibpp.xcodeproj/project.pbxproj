@@ -1,0 +1,969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A7FC1221F150B92004DBD28 /* ripplelibpp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A7FC1201F150B92004DBD28 /* ripplelibpp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A7FC15B1F151138004DBD28 /* version.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8A7FC1541F151138004DBD28 /* version.hpp */; };
+		8A7FC15F1F151138004DBD28 /* ripple-libpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC15A1F151138004DBD28 /* ripple-libpp.cpp */; };
+		8A7FC16D1F151361004DBD28 /* android.gcc-arm64-v8a.jam in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1621F151361004DBD28 /* android.gcc-arm64-v8a.jam */; };
+		8A7FC16E1F151361004DBD28 /* android.gcc-armeabi-v7a.jam in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1631F151361004DBD28 /* android.gcc-armeabi-v7a.jam */; };
+		8A7FC16F1F151361004DBD28 /* android.gcc-armeabi.jam in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1641F151361004DBD28 /* android.gcc-armeabi.jam */; };
+		8A7FC1701F151361004DBD28 /* android.gcc-mips.jam in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1651F151361004DBD28 /* android.gcc-mips.jam */; };
+		8A7FC1711F151361004DBD28 /* android.gcc-mips64.jam in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1661F151361004DBD28 /* android.gcc-mips64.jam */; };
+		8A7FC1721F151361004DBD28 /* android.gcc-x86.jam in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1671F151361004DBD28 /* android.gcc-x86.jam */; };
+		8A7FC1731F151361004DBD28 /* android.gcc-x86_64.jam in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FC1681F151361004DBD28 /* android.gcc-x86_64.jam */; };
+		8A7FC1741F151361004DBD28 /* build-all.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FC1691F151361004DBD28 /* build-all.sh */; };
+		8A7FC1751F151361004DBD28 /* build-ios.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FC16A1F151361004DBD28 /* build-ios.sh */; };
+		8A7FC1761F151361004DBD28 /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FC16B1F151361004DBD28 /* build.sh */; };
+		8A7FC1771F151361004DBD28 /* configure.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FC16C1F151361004DBD28 /* configure.sh */; };
+		8AF454B91F1514E8003EFCD5 /* build-ios.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8AF454B41F1514E8003EFCD5 /* build-ios.sh */; };
+		8AF454BA1F1514E8003EFCD5 /* build.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8AF454B51F1514E8003EFCD5 /* build.sh */; };
+		8AF454BB1F1514E8003EFCD5 /* build-all.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8AF454B61F1514E8003EFCD5 /* build-all.sh */; };
+		8AF454BC1F1514E8003EFCD5 /* configure.sh in Resources */ = {isa = PBXBuildFile; fileRef = 8AF454B71F1514E8003EFCD5 /* configure.sh */; };
+		8AF454BD1F1514E8003EFCD5 /* opensslconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF454B81F1514E8003EFCD5 /* opensslconf.h */; };
+		8AF454C41F151789003EFCD5 /* ed25519_donna.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AF454C31F151789003EFCD5 /* ed25519_donna.c */; };
+		8AF454C71F15258D003EFCD5 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF454C61F15258D003EFCD5 /* libcrypto.a */; };
+		8AF454CC1F153BB1003EFCD5 /* libboost_regex-clang-mt-1_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF454C91F153BB1003EFCD5 /* libboost_regex-clang-mt-1_64.a */; };
+		8AF454CD1F153BB1003EFCD5 /* libboost_system-clang-mt-1_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF454CA1F153BB1003EFCD5 /* libboost_system-clang-mt-1_64.a */; };
+		8AF454CE1F153BB1003EFCD5 /* libboost_thread-clang-mt-1_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF454CB1F153BB1003EFCD5 /* libboost_thread-clang-mt-1_64.a */; };
+		923F15431F1793CC00A73968 /* RIAccountID.h in Headers */ = {isa = PBXBuildFile; fileRef = 923F15321F1793CC00A73968 /* RIAccountID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923F15441F1793CC00A73968 /* RIAccountID.mm in Sources */ = {isa = PBXBuildFile; fileRef = 923F15331F1793CC00A73968 /* RIAccountID.mm */; };
+		923F15451F1793CC00A73968 /* RIBase58Convertible.h in Headers */ = {isa = PBXBuildFile; fileRef = 923F15351F1793CC00A73968 /* RIBase58Convertible.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923F15461F1793CC00A73968 /* RIKeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 923F15371F1793CC00A73968 /* RIKeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923F15471F1793CC00A73968 /* RIKeyPair.mm in Sources */ = {isa = PBXBuildFile; fileRef = 923F15381F1793CC00A73968 /* RIKeyPair.mm */; };
+		923F15481F1793CC00A73968 /* RIPublicKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 923F153A1F1793CC00A73968 /* RIPublicKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923F15491F1793CC00A73968 /* RIPublicKey.mm in Sources */ = {isa = PBXBuildFile; fileRef = 923F153B1F1793CC00A73968 /* RIPublicKey.mm */; };
+		923F154A1F1793CC00A73968 /* RISecretKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 923F153D1F1793CC00A73968 /* RISecretKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923F154B1F1793CC00A73968 /* RISeed.h in Headers */ = {isa = PBXBuildFile; fileRef = 923F153F1F1793CC00A73968 /* RISeed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		923F154C1F1793CC00A73968 /* RISeed.mm in Sources */ = {isa = PBXBuildFile; fileRef = 923F15401F1793CC00A73968 /* RISeed.mm */; };
+		92408DC31F1CE08200FA3C59 /* RIBaseUInt.h in Headers */ = {isa = PBXBuildFile; fileRef = 92408DC11F1CE08200FA3C59 /* RIBaseUInt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92408DC41F1CE08200FA3C59 /* RIBaseUInt.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92408DC21F1CE08200FA3C59 /* RIBaseUInt.mm */; };
+		928154851F1E406100504E19 /* RIBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154831F1E406100504E19 /* RIBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928154861F1E406100504E19 /* RIBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 928154841F1E406100504E19 /* RIBuffer.mm */; };
+		9281548B1F1E44E500504E19 /* RISlice.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154891F1E44E500504E19 /* RISlice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9281548C1F1E44E500504E19 /* RISlice.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9281548A1F1E44E500504E19 /* RISlice.mm */; };
+		928154971F1E52B300504E19 /* RISTTx.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154901F1E52B300504E19 /* RISTTx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928154981F1E52B300504E19 /* RISTTx.mm in Sources */ = {isa = PBXBuildFile; fileRef = 928154911F1E52B300504E19 /* RISTTx.mm */; };
+		928154991F1E52B300504E19 /* RISTTxBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154921F1E52B300504E19 /* RISTTxBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9281549A1F1E52B300504E19 /* RISTTxBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 928154931F1E52B300504E19 /* RISTTxBuilder.mm */; };
+		9281549B1F1E52B300504E19 /* RISTTxSign.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154941F1E52B300504E19 /* RISTTxSign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9281549C1F1E52B300504E19 /* RISTTxSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 928154951F1E52B300504E19 /* RISTTxSign.m */; };
+		9281549D1F1E52B300504E19 /* RITxType.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154961F1E52B300504E19 /* RITxType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928154A01F1E52D600504E19 /* RISTObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9281549E1F1E52D600504E19 /* RISTObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928154A11F1E52D600504E19 /* RISTObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9281549F1F1E52D600504E19 /* RISTObject.mm */; };
+		928154A91F1E5C1E00504E19 /* RISTObjectBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154A71F1E5C1E00504E19 /* RISTObjectBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		928154AA1F1E5C1E00504E19 /* RISTObjectBuilder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 928154A81F1E5C1E00504E19 /* RISTObjectBuilder.mm */; };
+		928154AC1F1E5CD300504E19 /* RISTObjectBuilder_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154AB1F1E5CD300504E19 /* RISTObjectBuilder_private.h */; };
+		928154AE1F1E74F100504E19 /* RISField.h in Headers */ = {isa = PBXBuildFile; fileRef = 928154AD1F1E74C200504E19 /* RISField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		929B4A491F17AD7A00A458EC /* RISecretKey.mm in Sources */ = {isa = PBXBuildFile; fileRef = 929B4A481F17AD7A00A458EC /* RISecretKey.mm */; };
+		92B028731F1948C7000B4AA7 /* RICurrency.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B028711F1948C7000B4AA7 /* RICurrency.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92B028741F1948C7000B4AA7 /* RICurrency.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92B028721F1948C7000B4AA7 /* RICurrency.mm */; };
+		92B028791F194D37000B4AA7 /* RIIssue.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B028771F194D37000B4AA7 /* RIIssue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92B0287A1F194D37000B4AA7 /* RIIssue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92B028781F194D37000B4AA7 /* RIIssue.mm */; };
+		92B0287C1F1959A8000B4AA7 /* RISerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3C41F18F41E00C82A32 /* RISerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92B0287D1F1959D7000B4AA7 /* RIStrHexConvertible.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3C21F18F19E00C82A32 /* RIStrHexConvertible.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92B0287E1F1959DC000B4AA7 /* RIBlob.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3BE1F18EB0000C82A32 /* RIBlob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C4B3B41F18E74600C82A32 /* RIAccountID_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3AE1F18E74600C82A32 /* RIAccountID_private.h */; };
+		92C4B3B51F18E74600C82A32 /* RIPublicKey_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3AF1F18E74600C82A32 /* RIPublicKey_private.h */; };
+		92C4B3B61F18E74600C82A32 /* RISecretKey_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3B01F18E74600C82A32 /* RISecretKey_private.h */; };
+		92C4B3B71F18E74600C82A32 /* RISeed_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3B11F18E74600C82A32 /* RISeed_private.h */; };
+		92C4B3C01F18EB2C00C82A32 /* RIBlob.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92C4B3BF1F18EB2C00C82A32 /* RIBlob.mm */; };
+		92C4B3C71F18F61C00C82A32 /* RISerializer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92C4B3C61F18F61C00C82A32 /* RISerializer.mm */; };
+		92C4B3D31F19270A00C82A32 /* RISTTxBuilder_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3D21F19266900C82A32 /* RISTTxBuilder_private.h */; };
+		92C4B3D51F19272800C82A32 /* RISerializer_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3C51F18F5A700C82A32 /* RISerializer_private.h */; };
+		92C4B3D61F19272C00C82A32 /* RIBlob_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3C11F18EB9400C82A32 /* RIBlob_private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C4B3D81F1927AA00C82A32 /* RISTObject_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3D71F1927AA00C82A32 /* RISTObject_private.h */; };
+		92C4B3DD1F19368A00C82A32 /* RIAmount.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3DB1F19368A00C82A32 /* RIAmount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C4B3DE1F19368A00C82A32 /* RIAmount.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92C4B3DC1F19368A00C82A32 /* RIAmount.mm */; };
+		92C4B3E21F193EA100C82A32 /* RITxFlags.h in Headers */ = {isa = PBXBuildFile; fileRef = 92C4B3E01F193EA100C82A32 /* RITxFlags.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C4B3E31F193EA100C82A32 /* RITxFlags.mm in Sources */ = {isa = PBXBuildFile; fileRef = 92C4B3E11F193EA100C82A32 /* RITxFlags.mm */; };
+		FC265C481F1C0D6B00E3DEFF /* RIDemoTest.h in Headers */ = {isa = PBXBuildFile; fileRef = FC265C461F1C0D6B00E3DEFF /* RIDemoTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC265C491F1C0D6B00E3DEFF /* RIDemoTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC265C471F1C0D6B00E3DEFF /* RIDemoTest.mm */; };
+		FC265C4D1F1C1CEB00E3DEFF /* RIJson.h in Headers */ = {isa = PBXBuildFile; fileRef = FC265C4B1F1C1CEB00E3DEFF /* RIJson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC265C4E1F1C1CEB00E3DEFF /* RIJson.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC265C4C1F1C1CEB00E3DEFF /* RIJson.mm */; };
+		FC265C511F1C205900E3DEFF /* RIStyledString.h in Headers */ = {isa = PBXBuildFile; fileRef = FC265C501F1C1F8200E3DEFF /* RIStyledString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8A7FC11D1F150B92004DBD28 /* ripplelibpp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ripplelibpp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A7FC1201F150B92004DBD28 /* ripplelibpp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ripplelibpp.h; sourceTree = "<group>"; };
+		8A7FC1211F150B92004DBD28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A7FC1541F151138004DBD28 /* version.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = version.hpp; sourceTree = "<group>"; };
+		8A7FC15A1F151138004DBD28 /* ripple-libpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "ripple-libpp.cpp"; sourceTree = "<group>"; };
+		8A7FC1621F151361004DBD28 /* android.gcc-arm64-v8a.jam */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.jam; path = "android.gcc-arm64-v8a.jam"; sourceTree = "<group>"; };
+		8A7FC1631F151361004DBD28 /* android.gcc-armeabi-v7a.jam */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.jam; path = "android.gcc-armeabi-v7a.jam"; sourceTree = "<group>"; };
+		8A7FC1641F151361004DBD28 /* android.gcc-armeabi.jam */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.jam; path = "android.gcc-armeabi.jam"; sourceTree = "<group>"; };
+		8A7FC1651F151361004DBD28 /* android.gcc-mips.jam */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.jam; path = "android.gcc-mips.jam"; sourceTree = "<group>"; };
+		8A7FC1661F151361004DBD28 /* android.gcc-mips64.jam */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.jam; path = "android.gcc-mips64.jam"; sourceTree = "<group>"; };
+		8A7FC1671F151361004DBD28 /* android.gcc-x86.jam */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.jam; path = "android.gcc-x86.jam"; sourceTree = "<group>"; };
+		8A7FC1681F151361004DBD28 /* android.gcc-x86_64.jam */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.jam; path = "android.gcc-x86_64.jam"; sourceTree = "<group>"; };
+		8A7FC1691F151361004DBD28 /* build-all.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "build-all.sh"; path = "boost/build-all.sh"; sourceTree = "<group>"; };
+		8A7FC16A1F151361004DBD28 /* build-ios.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "build-ios.sh"; path = "boost/build-ios.sh"; sourceTree = "<group>"; };
+		8A7FC16B1F151361004DBD28 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = boost/build.sh; sourceTree = "<group>"; };
+		8A7FC16C1F151361004DBD28 /* configure.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = configure.sh; path = boost/configure.sh; sourceTree = "<group>"; };
+		8AF454B41F1514E8003EFCD5 /* build-ios.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "build-ios.sh"; path = "openssl/build-ios.sh"; sourceTree = "<group>"; };
+		8AF454B51F1514E8003EFCD5 /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = build.sh; path = openssl/build.sh; sourceTree = "<group>"; };
+		8AF454B61F1514E8003EFCD5 /* build-all.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = "build-all.sh"; path = "openssl/build-all.sh"; sourceTree = "<group>"; };
+		8AF454B71F1514E8003EFCD5 /* configure.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = configure.sh; path = openssl/configure.sh; sourceTree = "<group>"; };
+		8AF454B81F1514E8003EFCD5 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = opensslconf.h; path = openssl/opensslconf.h; sourceTree = "<group>"; };
+		8AF454C31F151789003EFCD5 /* ed25519_donna.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ed25519_donna.c; path = "ripple-libpp/extras/rippled/src/ripple/unity/ed25519_donna.c"; sourceTree = "<group>"; };
+		8AF454C61F15258D003EFCD5 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = openssl/upstream.patched/libcrypto.a; sourceTree = "<group>"; };
+		8AF454C91F153BB1003EFCD5 /* libboost_regex-clang-mt-1_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_regex-clang-mt-1_64.a"; path = "boost/upstream.patched/libboost_regex-clang-mt-1_64.a"; sourceTree = "<group>"; };
+		8AF454CA1F153BB1003EFCD5 /* libboost_system-clang-mt-1_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_system-clang-mt-1_64.a"; path = "boost/upstream.patched/libboost_system-clang-mt-1_64.a"; sourceTree = "<group>"; };
+		8AF454CB1F153BB1003EFCD5 /* libboost_thread-clang-mt-1_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libboost_thread-clang-mt-1_64.a"; path = "boost/upstream.patched/libboost_thread-clang-mt-1_64.a"; sourceTree = "<group>"; };
+		923F15321F1793CC00A73968 /* RIAccountID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIAccountID.h; sourceTree = "<group>"; };
+		923F15331F1793CC00A73968 /* RIAccountID.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIAccountID.mm; sourceTree = "<group>"; };
+		923F15351F1793CC00A73968 /* RIBase58Convertible.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIBase58Convertible.h; sourceTree = "<group>"; };
+		923F15371F1793CC00A73968 /* RIKeyPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIKeyPair.h; sourceTree = "<group>"; };
+		923F15381F1793CC00A73968 /* RIKeyPair.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIKeyPair.mm; sourceTree = "<group>"; };
+		923F153A1F1793CC00A73968 /* RIPublicKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIPublicKey.h; sourceTree = "<group>"; };
+		923F153B1F1793CC00A73968 /* RIPublicKey.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIPublicKey.mm; sourceTree = "<group>"; };
+		923F153D1F1793CC00A73968 /* RISecretKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISecretKey.h; sourceTree = "<group>"; };
+		923F153F1F1793CC00A73968 /* RISeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISeed.h; sourceTree = "<group>"; };
+		923F15401F1793CC00A73968 /* RISeed.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RISeed.mm; sourceTree = "<group>"; };
+		92408DC11F1CE08200FA3C59 /* RIBaseUInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIBaseUInt.h; sourceTree = "<group>"; };
+		92408DC21F1CE08200FA3C59 /* RIBaseUInt.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIBaseUInt.mm; sourceTree = "<group>"; };
+		92408DC51F1CE19C00FA3C59 /* RIBaseUInt_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIBaseUInt_private.h; sourceTree = "<group>"; };
+		928154831F1E406100504E19 /* RIBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIBuffer.h; sourceTree = "<group>"; };
+		928154841F1E406100504E19 /* RIBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIBuffer.mm; sourceTree = "<group>"; };
+		928154871F1E407400504E19 /* RIBuffer_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIBuffer_private.h; sourceTree = "<group>"; };
+		928154891F1E44E500504E19 /* RISlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISlice.h; sourceTree = "<group>"; };
+		9281548A1F1E44E500504E19 /* RISlice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RISlice.mm; sourceTree = "<group>"; };
+		9281548D1F1E44FB00504E19 /* RISlice_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RISlice_private.h; sourceTree = "<group>"; };
+		928154901F1E52B300504E19 /* RISTTx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISTTx.h; sourceTree = "<group>"; };
+		928154911F1E52B300504E19 /* RISTTx.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RISTTx.mm; sourceTree = "<group>"; };
+		928154921F1E52B300504E19 /* RISTTxBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISTTxBuilder.h; sourceTree = "<group>"; };
+		928154931F1E52B300504E19 /* RISTTxBuilder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RISTTxBuilder.mm; sourceTree = "<group>"; };
+		928154941F1E52B300504E19 /* RISTTxSign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISTTxSign.h; sourceTree = "<group>"; };
+		928154951F1E52B300504E19 /* RISTTxSign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RISTTxSign.m; sourceTree = "<group>"; };
+		928154961F1E52B300504E19 /* RITxType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITxType.h; sourceTree = "<group>"; };
+		9281549E1F1E52D600504E19 /* RISTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISTObject.h; sourceTree = "<group>"; };
+		9281549F1F1E52D600504E19 /* RISTObject.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RISTObject.mm; sourceTree = "<group>"; };
+		928154A71F1E5C1E00504E19 /* RISTObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISTObjectBuilder.h; sourceTree = "<group>"; };
+		928154A81F1E5C1E00504E19 /* RISTObjectBuilder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RISTObjectBuilder.mm; sourceTree = "<group>"; };
+		928154AB1F1E5CD300504E19 /* RISTObjectBuilder_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISTObjectBuilder_private.h; sourceTree = "<group>"; };
+		928154AD1F1E74C200504E19 /* RISField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RISField.h; sourceTree = "<group>"; };
+		929B4A481F17AD7A00A458EC /* RISecretKey.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RISecretKey.mm; sourceTree = "<group>"; };
+		92B028711F1948C7000B4AA7 /* RICurrency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RICurrency.h; sourceTree = "<group>"; };
+		92B028721F1948C7000B4AA7 /* RICurrency.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RICurrency.mm; sourceTree = "<group>"; };
+		92B028751F1948E0000B4AA7 /* RICurrency_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RICurrency_private.h; sourceTree = "<group>"; };
+		92B028771F194D37000B4AA7 /* RIIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIIssue.h; sourceTree = "<group>"; };
+		92B028781F194D37000B4AA7 /* RIIssue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIIssue.mm; sourceTree = "<group>"; };
+		92B0287B1F194F90000B4AA7 /* RIIssue_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIIssue_private.h; sourceTree = "<group>"; };
+		92C4B3AE1F18E74600C82A32 /* RIAccountID_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIAccountID_private.h; sourceTree = "<group>"; };
+		92C4B3AF1F18E74600C82A32 /* RIPublicKey_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIPublicKey_private.h; sourceTree = "<group>"; };
+		92C4B3B01F18E74600C82A32 /* RISecretKey_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISecretKey_private.h; sourceTree = "<group>"; };
+		92C4B3B11F18E74600C82A32 /* RISeed_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISeed_private.h; sourceTree = "<group>"; };
+		92C4B3BE1F18EB0000C82A32 /* RIBlob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIBlob.h; sourceTree = "<group>"; };
+		92C4B3BF1F18EB2C00C82A32 /* RIBlob.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIBlob.mm; sourceTree = "<group>"; };
+		92C4B3C11F18EB9400C82A32 /* RIBlob_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIBlob_private.h; sourceTree = "<group>"; };
+		92C4B3C21F18F19E00C82A32 /* RIStrHexConvertible.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIStrHexConvertible.h; sourceTree = "<group>"; };
+		92C4B3C41F18F41E00C82A32 /* RISerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RISerializer.h; sourceTree = "<group>"; };
+		92C4B3C51F18F5A700C82A32 /* RISerializer_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RISerializer_private.h; sourceTree = "<group>"; };
+		92C4B3C61F18F61C00C82A32 /* RISerializer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RISerializer.mm; sourceTree = "<group>"; };
+		92C4B3D21F19266900C82A32 /* RISTTxBuilder_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RISTTxBuilder_private.h; sourceTree = "<group>"; };
+		92C4B3D71F1927AA00C82A32 /* RISTObject_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RISTObject_private.h; sourceTree = "<group>"; };
+		92C4B3DB1F19368A00C82A32 /* RIAmount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RIAmount.h; path = "ripple-libpp-proxy/RIAmount/RIAmount.h"; sourceTree = SOURCE_ROOT; };
+		92C4B3DC1F19368A00C82A32 /* RIAmount.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = RIAmount.mm; path = "ripple-libpp-proxy/RIAmount/RIAmount.mm"; sourceTree = SOURCE_ROOT; };
+		92C4B3DF1F1936B600C82A32 /* RIAmount_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIAmount_private.h; sourceTree = "<group>"; };
+		92C4B3E01F193EA100C82A32 /* RITxFlags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RITxFlags.h; sourceTree = "<group>"; };
+		92C4B3E11F193EA100C82A32 /* RITxFlags.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RITxFlags.mm; sourceTree = "<group>"; };
+		FC265C461F1C0D6B00E3DEFF /* RIDemoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIDemoTest.h; sourceTree = "<group>"; };
+		FC265C471F1C0D6B00E3DEFF /* RIDemoTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIDemoTest.mm; sourceTree = "<group>"; };
+		FC265C4B1F1C1CEB00E3DEFF /* RIJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIJson.h; sourceTree = "<group>"; };
+		FC265C4C1F1C1CEB00E3DEFF /* RIJson.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RIJson.mm; sourceTree = "<group>"; };
+		FC265C4F1F1C1D2900E3DEFF /* RIJson_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIJson_private.h; sourceTree = "<group>"; };
+		FC265C501F1C1F8200E3DEFF /* RIStyledString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RIStyledString.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A7FC1191F150B92004DBD28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AF454C71F15258D003EFCD5 /* libcrypto.a in Frameworks */,
+				8AF454CC1F153BB1003EFCD5 /* libboost_regex-clang-mt-1_64.a in Frameworks */,
+				8AF454CE1F153BB1003EFCD5 /* libboost_thread-clang-mt-1_64.a in Frameworks */,
+				8AF454CD1F153BB1003EFCD5 /* libboost_system-clang-mt-1_64.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A7FC1131F150B92004DBD28 = {
+			isa = PBXGroup;
+			children = (
+				923F15301F1793CC00A73968 /* ripple-libpp-proxy */,
+				8A7FC1601F15133A004DBD28 /* boost */,
+				8A7FC1781F151423004DBD28 /* openssl */,
+				8A7FC14E1F1510AF004DBD28 /* ripple-libpp */,
+				8A7FC11F1F150B92004DBD28 /* ripplelibpp */,
+				8A7FC11E1F150B92004DBD28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A7FC11E1F150B92004DBD28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC11D1F150B92004DBD28 /* ripplelibpp.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A7FC11F1F150B92004DBD28 /* ripplelibpp */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC1201F150B92004DBD28 /* ripplelibpp.h */,
+				8A7FC1211F150B92004DBD28 /* Info.plist */,
+			);
+			path = ripplelibpp;
+			sourceTree = "<group>";
+		};
+		8A7FC14E1F1510AF004DBD28 /* ripple-libpp */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454BE1F15174E003EFCD5 /* extras */,
+				8A7FC1511F151138004DBD28 /* src */,
+			);
+			name = "ripple-libpp";
+			sourceTree = "<group>";
+		};
+		8A7FC1511F151138004DBD28 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC1521F151138004DBD28 /* include */,
+				8A7FC1581F151138004DBD28 /* unity */,
+			);
+			name = src;
+			path = "ripple-libpp/src";
+			sourceTree = "<group>";
+		};
+		8A7FC1521F151138004DBD28 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC1531F151138004DBD28 /* ripple-libpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8A7FC1531F151138004DBD28 /* ripple-libpp */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC1541F151138004DBD28 /* version.hpp */,
+			);
+			path = "ripple-libpp";
+			sourceTree = "<group>";
+		};
+		8A7FC1581F151138004DBD28 /* unity */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC15A1F151138004DBD28 /* ripple-libpp.cpp */,
+			);
+			path = unity;
+			sourceTree = "<group>";
+		};
+		8A7FC1601F15133A004DBD28 /* boost */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454C81F15354C003EFCD5 /* upstream.patched */,
+				8A7FC1611F151361004DBD28 /* targets */,
+				8A7FC1691F151361004DBD28 /* build-all.sh */,
+				8A7FC16A1F151361004DBD28 /* build-ios.sh */,
+				8A7FC16B1F151361004DBD28 /* build.sh */,
+				8A7FC16C1F151361004DBD28 /* configure.sh */,
+			);
+			name = boost;
+			sourceTree = "<group>";
+		};
+		8A7FC1611F151361004DBD28 /* targets */ = {
+			isa = PBXGroup;
+			children = (
+				8A7FC1621F151361004DBD28 /* android.gcc-arm64-v8a.jam */,
+				8A7FC1631F151361004DBD28 /* android.gcc-armeabi-v7a.jam */,
+				8A7FC1641F151361004DBD28 /* android.gcc-armeabi.jam */,
+				8A7FC1651F151361004DBD28 /* android.gcc-mips.jam */,
+				8A7FC1661F151361004DBD28 /* android.gcc-mips64.jam */,
+				8A7FC1671F151361004DBD28 /* android.gcc-x86.jam */,
+				8A7FC1681F151361004DBD28 /* android.gcc-x86_64.jam */,
+			);
+			name = targets;
+			path = boost/targets;
+			sourceTree = "<group>";
+		};
+		8A7FC1781F151423004DBD28 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454C51F152571003EFCD5 /* upstream.patched */,
+				8AF454B41F1514E8003EFCD5 /* build-ios.sh */,
+				8AF454B51F1514E8003EFCD5 /* build.sh */,
+				8AF454B61F1514E8003EFCD5 /* build-all.sh */,
+				8AF454B71F1514E8003EFCD5 /* configure.sh */,
+				8AF454B81F1514E8003EFCD5 /* opensslconf.h */,
+			);
+			name = openssl;
+			sourceTree = "<group>";
+		};
+		8AF454BE1F15174E003EFCD5 /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454BF1F151758003EFCD5 /* rippled */,
+			);
+			name = extras;
+			sourceTree = "<group>";
+		};
+		8AF454BF1F151758003EFCD5 /* rippled */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454C01F151763003EFCD5 /* src */,
+			);
+			name = rippled;
+			sourceTree = "<group>";
+		};
+		8AF454C01F151763003EFCD5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454C11F151767003EFCD5 /* ripple */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8AF454C11F151767003EFCD5 /* ripple */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454C21F15176F003EFCD5 /* unity */,
+			);
+			name = ripple;
+			sourceTree = "<group>";
+		};
+		8AF454C21F15176F003EFCD5 /* unity */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454C31F151789003EFCD5 /* ed25519_donna.c */,
+			);
+			name = unity;
+			sourceTree = "<group>";
+		};
+		8AF454C51F152571003EFCD5 /* upstream.patched */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454C61F15258D003EFCD5 /* libcrypto.a */,
+			);
+			name = upstream.patched;
+			sourceTree = "<group>";
+		};
+		8AF454C81F15354C003EFCD5 /* upstream.patched */ = {
+			isa = PBXGroup;
+			children = (
+				8AF454C91F153BB1003EFCD5 /* libboost_regex-clang-mt-1_64.a */,
+				8AF454CA1F153BB1003EFCD5 /* libboost_system-clang-mt-1_64.a */,
+				8AF454CB1F153BB1003EFCD5 /* libboost_thread-clang-mt-1_64.a */,
+			);
+			name = upstream.patched;
+			sourceTree = "<group>";
+		};
+		923F15301F1793CC00A73968 /* ripple-libpp-proxy */ = {
+			isa = PBXGroup;
+			children = (
+				92C4B3AC1F18E74600C82A32 /* Helpers */,
+				923F15341F1793CC00A73968 /* RIBase58Convertible */,
+				923F15311F1793CC00A73968 /* RIAccountID */,
+				923F15361F1793CC00A73968 /* RIKeyPair */,
+				923F15391F1793CC00A73968 /* RIPublicKey */,
+				923F153C1F1793CC00A73968 /* RISecretKey */,
+				923F153E1F1793CC00A73968 /* RISeed */,
+				92C4B3BD1F18EAF100C82A32 /* RIBlob */,
+				92C4B3C31F18F40800C82A32 /* RISerializer */,
+				92C4B3D91F1935FB00C82A32 /* RIAmount */,
+				92B028701F1948AD000B4AA7 /* RICurrency */,
+				92B028761F194D22000B4AA7 /* RIIssue */,
+				FC265C4A1F1C1CD900E3DEFF /* RIJson */,
+				9281547E1F1E3F3B00504E19 /* RIBuffer */,
+				928154881F1E44A600504E19 /* RISlice */,
+				9281548E1F1E52B300504E19 /* RISTObject */,
+			);
+			path = "ripple-libpp-proxy";
+			sourceTree = "<group>";
+		};
+		923F15311F1793CC00A73968 /* RIAccountID */ = {
+			isa = PBXGroup;
+			children = (
+				923F15321F1793CC00A73968 /* RIAccountID.h */,
+				923F15331F1793CC00A73968 /* RIAccountID.mm */,
+			);
+			path = RIAccountID;
+			sourceTree = "<group>";
+		};
+		923F15341F1793CC00A73968 /* RIBase58Convertible */ = {
+			isa = PBXGroup;
+			children = (
+				923F15351F1793CC00A73968 /* RIBase58Convertible.h */,
+			);
+			path = RIBase58Convertible;
+			sourceTree = "<group>";
+		};
+		923F15361F1793CC00A73968 /* RIKeyPair */ = {
+			isa = PBXGroup;
+			children = (
+				923F15371F1793CC00A73968 /* RIKeyPair.h */,
+				923F15381F1793CC00A73968 /* RIKeyPair.mm */,
+			);
+			path = RIKeyPair;
+			sourceTree = "<group>";
+		};
+		923F15391F1793CC00A73968 /* RIPublicKey */ = {
+			isa = PBXGroup;
+			children = (
+				923F153A1F1793CC00A73968 /* RIPublicKey.h */,
+				923F153B1F1793CC00A73968 /* RIPublicKey.mm */,
+			);
+			path = RIPublicKey;
+			sourceTree = "<group>";
+		};
+		923F153C1F1793CC00A73968 /* RISecretKey */ = {
+			isa = PBXGroup;
+			children = (
+				923F153D1F1793CC00A73968 /* RISecretKey.h */,
+				929B4A481F17AD7A00A458EC /* RISecretKey.mm */,
+			);
+			path = RISecretKey;
+			sourceTree = "<group>";
+		};
+		923F153E1F1793CC00A73968 /* RISeed */ = {
+			isa = PBXGroup;
+			children = (
+				923F153F1F1793CC00A73968 /* RISeed.h */,
+				923F15401F1793CC00A73968 /* RISeed.mm */,
+			);
+			path = RISeed;
+			sourceTree = "<group>";
+		};
+		92408DBE1F1CE04000FA3C59 /* TxFlags */ = {
+			isa = PBXGroup;
+			children = (
+				92C4B3E01F193EA100C82A32 /* RITxFlags.h */,
+				92C4B3E11F193EA100C82A32 /* RITxFlags.mm */,
+			);
+			name = TxFlags;
+			sourceTree = "<group>";
+		};
+		92408DC01F1CE05E00FA3C59 /* RIUInt */ = {
+			isa = PBXGroup;
+			children = (
+				92408DC11F1CE08200FA3C59 /* RIBaseUInt.h */,
+				92408DC21F1CE08200FA3C59 /* RIBaseUInt.mm */,
+			);
+			name = RIUInt;
+			sourceTree = "<group>";
+		};
+		9281547E1F1E3F3B00504E19 /* RIBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				928154831F1E406100504E19 /* RIBuffer.h */,
+				928154841F1E406100504E19 /* RIBuffer.mm */,
+			);
+			path = RIBuffer;
+			sourceTree = "<group>";
+		};
+		928154881F1E44A600504E19 /* RISlice */ = {
+			isa = PBXGroup;
+			children = (
+				928154891F1E44E500504E19 /* RISlice.h */,
+				9281548A1F1E44E500504E19 /* RISlice.mm */,
+			);
+			path = RISlice;
+			sourceTree = "<group>";
+		};
+		9281548E1F1E52B300504E19 /* RISTObject */ = {
+			isa = PBXGroup;
+			children = (
+				9281548F1F1E52B300504E19 /* RISTTx */,
+				9281549E1F1E52D600504E19 /* RISTObject.h */,
+				9281549F1F1E52D600504E19 /* RISTObject.mm */,
+				928154A71F1E5C1E00504E19 /* RISTObjectBuilder.h */,
+				928154A81F1E5C1E00504E19 /* RISTObjectBuilder.mm */,
+				928154AD1F1E74C200504E19 /* RISField.h */,
+			);
+			path = RISTObject;
+			sourceTree = "<group>";
+		};
+		9281548F1F1E52B300504E19 /* RISTTx */ = {
+			isa = PBXGroup;
+			children = (
+				928154901F1E52B300504E19 /* RISTTx.h */,
+				928154911F1E52B300504E19 /* RISTTx.mm */,
+				928154921F1E52B300504E19 /* RISTTxBuilder.h */,
+				928154931F1E52B300504E19 /* RISTTxBuilder.mm */,
+				928154941F1E52B300504E19 /* RISTTxSign.h */,
+				928154951F1E52B300504E19 /* RISTTxSign.m */,
+				928154961F1E52B300504E19 /* RITxType.h */,
+			);
+			path = RISTTx;
+			sourceTree = "<group>";
+		};
+		92B028701F1948AD000B4AA7 /* RICurrency */ = {
+			isa = PBXGroup;
+			children = (
+				92B028711F1948C7000B4AA7 /* RICurrency.h */,
+				92B028721F1948C7000B4AA7 /* RICurrency.mm */,
+			);
+			path = RICurrency;
+			sourceTree = "<group>";
+		};
+		92B028761F194D22000B4AA7 /* RIIssue */ = {
+			isa = PBXGroup;
+			children = (
+				92B028771F194D37000B4AA7 /* RIIssue.h */,
+				92B028781F194D37000B4AA7 /* RIIssue.mm */,
+			);
+			path = RIIssue;
+			sourceTree = "<group>";
+		};
+		92C4B3AC1F18E74600C82A32 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				92408DC01F1CE05E00FA3C59 /* RIUInt */,
+				92408DBE1F1CE04000FA3C59 /* TxFlags */,
+				FC265C431F1C0D4200E3DEFF /* Demo */,
+				92C4B3C91F18F71000C82A32 /* Protocol */,
+				92C4B3C81F18F6FE00C82A32 /* Private */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		92C4B3BD1F18EAF100C82A32 /* RIBlob */ = {
+			isa = PBXGroup;
+			children = (
+				92C4B3BE1F18EB0000C82A32 /* RIBlob.h */,
+				92C4B3BF1F18EB2C00C82A32 /* RIBlob.mm */,
+			);
+			name = RIBlob;
+			path = Blob;
+			sourceTree = "<group>";
+		};
+		92C4B3C31F18F40800C82A32 /* RISerializer */ = {
+			isa = PBXGroup;
+			children = (
+				92C4B3C41F18F41E00C82A32 /* RISerializer.h */,
+				92C4B3C61F18F61C00C82A32 /* RISerializer.mm */,
+			);
+			path = RISerializer;
+			sourceTree = "<group>";
+		};
+		92C4B3C81F18F6FE00C82A32 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				92C4B3AE1F18E74600C82A32 /* RIAccountID_private.h */,
+				92C4B3AF1F18E74600C82A32 /* RIPublicKey_private.h */,
+				92C4B3B01F18E74600C82A32 /* RISecretKey_private.h */,
+				92C4B3B11F18E74600C82A32 /* RISeed_private.h */,
+				92C4B3C11F18EB9400C82A32 /* RIBlob_private.h */,
+				92C4B3C51F18F5A700C82A32 /* RISerializer_private.h */,
+				928154AB1F1E5CD300504E19 /* RISTObjectBuilder_private.h */,
+				92C4B3D21F19266900C82A32 /* RISTTxBuilder_private.h */,
+				92C4B3D71F1927AA00C82A32 /* RISTObject_private.h */,
+				92C4B3DF1F1936B600C82A32 /* RIAmount_private.h */,
+				92B028751F1948E0000B4AA7 /* RICurrency_private.h */,
+				92B0287B1F194F90000B4AA7 /* RIIssue_private.h */,
+				FC265C4F1F1C1D2900E3DEFF /* RIJson_private.h */,
+				92408DC51F1CE19C00FA3C59 /* RIBaseUInt_private.h */,
+				928154871F1E407400504E19 /* RIBuffer_private.h */,
+				9281548D1F1E44FB00504E19 /* RISlice_private.h */,
+			);
+			name = Private;
+			sourceTree = "<group>";
+		};
+		92C4B3C91F18F71000C82A32 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				92C4B3C21F18F19E00C82A32 /* RIStrHexConvertible.h */,
+				FC265C501F1C1F8200E3DEFF /* RIStyledString.h */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		92C4B3D91F1935FB00C82A32 /* RIAmount */ = {
+			isa = PBXGroup;
+			children = (
+				92C4B3DB1F19368A00C82A32 /* RIAmount.h */,
+				92C4B3DC1F19368A00C82A32 /* RIAmount.mm */,
+			);
+			name = RIAmount;
+			path = RISerializer/RIAmount;
+			sourceTree = "<group>";
+		};
+		FC265C431F1C0D4200E3DEFF /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				FC265C461F1C0D6B00E3DEFF /* RIDemoTest.h */,
+				FC265C471F1C0D6B00E3DEFF /* RIDemoTest.mm */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+		FC265C4A1F1C1CD900E3DEFF /* RIJson */ = {
+			isa = PBXGroup;
+			children = (
+				FC265C4B1F1C1CEB00E3DEFF /* RIJson.h */,
+				FC265C4C1F1C1CEB00E3DEFF /* RIJson.mm */,
+			);
+			path = RIJson;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8A7FC11A1F150B92004DBD28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7FC1221F150B92004DBD28 /* ripplelibpp.h in Headers */,
+				923F15431F1793CC00A73968 /* RIAccountID.h in Headers */,
+				923F15451F1793CC00A73968 /* RIBase58Convertible.h in Headers */,
+				923F154B1F1793CC00A73968 /* RISeed.h in Headers */,
+				923F15481F1793CC00A73968 /* RIPublicKey.h in Headers */,
+				92C4B3B41F18E74600C82A32 /* RIAccountID_private.h in Headers */,
+				92C4B3E21F193EA100C82A32 /* RITxFlags.h in Headers */,
+				92B0287C1F1959A8000B4AA7 /* RISerializer.h in Headers */,
+				92C4B3D61F19272C00C82A32 /* RIBlob_private.h in Headers */,
+				928154AC1F1E5CD300504E19 /* RISTObjectBuilder_private.h in Headers */,
+				92C4B3DD1F19368A00C82A32 /* RIAmount.h in Headers */,
+				928154851F1E406100504E19 /* RIBuffer.h in Headers */,
+				92C4B3B51F18E74600C82A32 /* RIPublicKey_private.h in Headers */,
+				92B028791F194D37000B4AA7 /* RIIssue.h in Headers */,
+				928154A01F1E52D600504E19 /* RISTObject.h in Headers */,
+				92B0287D1F1959D7000B4AA7 /* RIStrHexConvertible.h in Headers */,
+				928154971F1E52B300504E19 /* RISTTx.h in Headers */,
+				9281548B1F1E44E500504E19 /* RISlice.h in Headers */,
+				92B0287E1F1959DC000B4AA7 /* RIBlob.h in Headers */,
+				928154AE1F1E74F100504E19 /* RISField.h in Headers */,
+				FC265C4D1F1C1CEB00E3DEFF /* RIJson.h in Headers */,
+				9281549B1F1E52B300504E19 /* RISTTxSign.h in Headers */,
+				928154A91F1E5C1E00504E19 /* RISTObjectBuilder.h in Headers */,
+				FC265C481F1C0D6B00E3DEFF /* RIDemoTest.h in Headers */,
+				928154991F1E52B300504E19 /* RISTTxBuilder.h in Headers */,
+				9281549D1F1E52B300504E19 /* RITxType.h in Headers */,
+				92408DC31F1CE08200FA3C59 /* RIBaseUInt.h in Headers */,
+				FC265C511F1C205900E3DEFF /* RIStyledString.h in Headers */,
+				92B028731F1948C7000B4AA7 /* RICurrency.h in Headers */,
+				92C4B3D81F1927AA00C82A32 /* RISTObject_private.h in Headers */,
+				923F154A1F1793CC00A73968 /* RISecretKey.h in Headers */,
+				923F15461F1793CC00A73968 /* RIKeyPair.h in Headers */,
+				8A7FC15B1F151138004DBD28 /* version.hpp in Headers */,
+				8AF454BD1F1514E8003EFCD5 /* opensslconf.h in Headers */,
+				92C4B3D51F19272800C82A32 /* RISerializer_private.h in Headers */,
+				92C4B3D31F19270A00C82A32 /* RISTTxBuilder_private.h in Headers */,
+				92C4B3B61F18E74600C82A32 /* RISecretKey_private.h in Headers */,
+				92C4B3B71F18E74600C82A32 /* RISeed_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8A7FC11C1F150B92004DBD28 /* ripplelibpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A7FC1251F150B92004DBD28 /* Build configuration list for PBXNativeTarget "ripplelibpp" */;
+			buildPhases = (
+				8A7FC1181F150B92004DBD28 /* Sources */,
+				8A7FC1191F150B92004DBD28 /* Frameworks */,
+				8A7FC11A1F150B92004DBD28 /* Headers */,
+				8A7FC11B1F150B92004DBD28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ripplelibpp;
+			productName = ripplelibpp;
+			productReference = 8A7FC11D1F150B92004DBD28 /* ripplelibpp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A7FC1141F150B92004DBD28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					8A7FC11C1F150B92004DBD28 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8A7FC1171F150B92004DBD28 /* Build configuration list for PBXProject "ripplelibpp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8A7FC1131F150B92004DBD28;
+			productRefGroup = 8A7FC11E1F150B92004DBD28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A7FC11C1F150B92004DBD28 /* ripplelibpp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A7FC11B1F150B92004DBD28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7FC1761F151361004DBD28 /* build.sh in Resources */,
+				8AF454BB1F1514E8003EFCD5 /* build-all.sh in Resources */,
+				8AF454B91F1514E8003EFCD5 /* build-ios.sh in Resources */,
+				8A7FC1741F151361004DBD28 /* build-all.sh in Resources */,
+				8AF454BA1F1514E8003EFCD5 /* build.sh in Resources */,
+				8A7FC1751F151361004DBD28 /* build-ios.sh in Resources */,
+				8A7FC1771F151361004DBD28 /* configure.sh in Resources */,
+				8AF454BC1F1514E8003EFCD5 /* configure.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A7FC1181F150B92004DBD28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC265C4E1F1C1CEB00E3DEFF /* RIJson.mm in Sources */,
+				923F154C1F1793CC00A73968 /* RISeed.mm in Sources */,
+				928154AA1F1E5C1E00504E19 /* RISTObjectBuilder.mm in Sources */,
+				92C4B3DE1F19368A00C82A32 /* RIAmount.mm in Sources */,
+				92C4B3E31F193EA100C82A32 /* RITxFlags.mm in Sources */,
+				8A7FC16D1F151361004DBD28 /* android.gcc-arm64-v8a.jam in Sources */,
+				8A7FC16E1F151361004DBD28 /* android.gcc-armeabi-v7a.jam in Sources */,
+				92C4B3C01F18EB2C00C82A32 /* RIBlob.mm in Sources */,
+				8A7FC1711F151361004DBD28 /* android.gcc-mips64.jam in Sources */,
+				8A7FC1721F151361004DBD28 /* android.gcc-x86.jam in Sources */,
+				8A7FC1731F151361004DBD28 /* android.gcc-x86_64.jam in Sources */,
+				923F15491F1793CC00A73968 /* RIPublicKey.mm in Sources */,
+				92B028741F1948C7000B4AA7 /* RICurrency.mm in Sources */,
+				923F15441F1793CC00A73968 /* RIAccountID.mm in Sources */,
+				928154981F1E52B300504E19 /* RISTTx.mm in Sources */,
+				FC265C491F1C0D6B00E3DEFF /* RIDemoTest.mm in Sources */,
+				92408DC41F1CE08200FA3C59 /* RIBaseUInt.mm in Sources */,
+				9281548C1F1E44E500504E19 /* RISlice.mm in Sources */,
+				928154A11F1E52D600504E19 /* RISTObject.mm in Sources */,
+				923F15471F1793CC00A73968 /* RIKeyPair.mm in Sources */,
+				928154861F1E406100504E19 /* RIBuffer.mm in Sources */,
+				92C4B3C71F18F61C00C82A32 /* RISerializer.mm in Sources */,
+				8AF454C41F151789003EFCD5 /* ed25519_donna.c in Sources */,
+				929B4A491F17AD7A00A458EC /* RISecretKey.mm in Sources */,
+				8A7FC15F1F151138004DBD28 /* ripple-libpp.cpp in Sources */,
+				92B0287A1F194D37000B4AA7 /* RIIssue.mm in Sources */,
+				9281549A1F1E52B300504E19 /* RISTTxBuilder.mm in Sources */,
+				8A7FC16F1F151361004DBD28 /* android.gcc-armeabi.jam in Sources */,
+				9281549C1F1E52B300504E19 /* RISTTxSign.m in Sources */,
+				8A7FC1701F151361004DBD28 /* android.gcc-mips.jam in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8A7FC1231F150B92004DBD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ripple-libpp/src/include",
+					"$(PROJECT_DIR)/ripple-libpp/extras/rippled/src",
+					"$(PROJECT_DIR)/ripple-libpp/extras/rippled/src/secp256k1",
+					"$(PROJECT_DIR)/ripple-libpp/extras/rippled/src/ed25519-donna",
+					"$(PROJECT_DIR)/ripple-libpp/extras/rippled/src/beast/include",
+					"$(PROJECT_DIR)/openssl/upstream.patched/include",
+					"$(PROJECT_DIR)/boost/upstream.patched",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/openssl/upstream.patched";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A7FC1241F150B92004DBD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/ripple-libpp/src/include",
+					"$(PROJECT_DIR)/ripple-libpp/extras/rippled/src",
+					"$(PROJECT_DIR)/ripple-libpp/extras/rippled/src/secp256k1",
+					"$(PROJECT_DIR)/ripple-libpp/extras/rippled/src/ed25519-donna",
+					"$(PROJECT_DIR)/ripple-libpp/extras/rippled/src/beast/include",
+					"$(PROJECT_DIR)/openssl/upstream.patched/include",
+					"$(PROJECT_DIR)/boost/upstream.patched",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/openssl/upstream.patched";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A7FC1261F150B92004DBD28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ripplelibpp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/boost/upstream.patched",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ripple.ripplelibpp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8A7FC1271F150B92004DBD28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ripplelibpp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/boost/upstream.patched",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ripple.ripplelibpp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A7FC1171F150B92004DBD28 /* Build configuration list for PBXProject "ripplelibpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7FC1231F150B92004DBD28 /* Debug */,
+				8A7FC1241F150B92004DBD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A7FC1251F150B92004DBD28 /* Build configuration list for PBXNativeTarget "ripplelibpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A7FC1261F150B92004DBD28 /* Debug */,
+				8A7FC1271F150B92004DBD28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A7FC1141F150B92004DBD28 /* Project object */;
+}

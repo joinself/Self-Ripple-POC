@@ -1,0 +1,27 @@
+import os ;
+local XCODE_DEVELOPER_ROOT = [ SHELL "xcode-select --print-path" : strip-eol ] ;
+local CLANGPP = [ SHELL "xcodebuild -sdk iphonesimulator -find-executable clang++" : strip-eol ] ;
+local TARGET = "iPhoneSimulator" ;
+local TARGET_VERSION = "10.3" ;
+
+# --------------------------------------------------------------------
+
+using clang : ios
+:
+$(CLANGPP)
+:
+<compileflags>-isysroot
+<compileflags>$(XCODE_DEVELOPER_ROOT)/Platforms/$(TARGET).platform/Developer/SDKs/$(TARGET)$(TARGET_VERSION).sdk
+<compileflags>-arch
+<compileflags>x86_64
+<compileflags>-stdlib=libc++
+<compileflags>-miphoneos-version-min=6.0
+<compileflags>-fPIC
+<compileflags>-fembed-bitcode
+<linkflags>-isysroot
+<linkflags>$(XCODE_DEVELOPER_ROOT)/Platforms/$(TARGET).platform/Developer/SDKs/$(TARGET)$(TARGET_VERSION).sdk
+<linkflags>-arch
+<linkflags>x86_64
+;
+
+option.set keep-going : false ;

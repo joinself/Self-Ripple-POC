@@ -1,0 +1,3 @@
+[submodule "ripplelibpp/src/main/cpp/ripple-libpp"]
+	path = ripplelibpp/src/main/cpp/ripple-libpp
+	url = https://github.com/ripple/ripple-libpp.git

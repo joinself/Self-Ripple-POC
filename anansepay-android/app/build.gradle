@@ -1,0 +1,165 @@
+plugins {
+    id 'com.gladed.androidgitversion' version '0.3.6'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+//apply plugin: 'jacoco'
+apply plugin: 'realm-android'
+
+//jacoco {
+//    toolVersion = "0.7.9"
+//}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        applicationId "im.ananse.payments"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionName androidGitVersion.name()
+        versionCode androidGitVersion.code()
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        buildConfigField 'String', 'OPENEXCHANGE_BASE_URL', OPENEXCHANGE_BASE_URL
+//        externalNativeBuild {
+//            cmake {
+//                cppFlags ""
+//            }
+//        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a'
+        }
+    }
+//    compileOptions {
+//        sourceCompatibility JavaVersion.VERSION_1_8
+//        targetCompatibility JavaVersion.VERSION_1_8
+//    }
+    signingConfigs {
+        release {
+            storeFile file(VPAY_RELEASE_STORE_FILE)
+            storePassword VPAY_RELEASE_STORE_PASSWORD
+            keyAlias VPAY_RELEASE_KEY_ALIAS
+            keyPassword VPAY_RELEASE_KEY_PASSWORD
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig = signingConfigs.release
+            testCoverageEnabled = false
+            minifyEnabled false
+            proguardFiles.add(file('proguard-debug.txt'))
+            jniDebuggable true
+        }
+        release {
+            signingConfig = signingConfigs.release
+            minifyEnabled false
+            proguardFiles.add(file('proguard-android.txt'))
+            proguardFiles.add(file('proguard-rules.pro'))
+            zipAlignEnabled true
+        }
+
+    }
+    flavorDimensions "applicationId"
+    productFlavors {
+        staging {
+            applicationId "com.vpay365.im.ananse.payments.staging"
+            buildConfigField 'String', 'GATEWAY_SERVER_URL', GATEWAY_URL_STAGING
+            buildConfigField 'String', 'RIPPLE_SERVER_URL', RIPPLE_URL_STAGING
+            buildConfigField 'String', 'CNY_ISSUING_WALLET_ADDRESS', CNY_ISSUING_WALLET_ADDRESS_STAGING
+            buildConfigField 'String', 'BTC_ISSUING_WALLET_ADDRESS', BTC_ISSUING_WALLET_ADDRESS_STAGING
+            buildConfigField 'String', 'BTC_TOPUP_WALLET_ADDRESS', BTC_TOPUP_WALLET_ADDRESS_STAGING
+            buildConfigField 'String', 'FEELPAY_TOPUP_URL', FEELPAY_URL_STAGING
+            buildConfigField 'String', 'RIPPLE_HOT_WALLET_ADDRESS', RIPPLE_HOT_WALLET_ADDRESS_STAGING
+            buildConfigField 'String', 'OPENEXCHANGE_APPID', OPENEXCHANGE_APPID_STAGING
+            buildConfigField 'String', 'FILEPROVIDER', FILEPROVIDER_STAGING
+        }
+        production {
+            applicationId "com.vpay365.im.ananse.payments"
+            buildConfigField 'String', 'GATEWAY_SERVER_URL', GATEWAY_URL_PRODUCTION
+            buildConfigField 'String', 'RIPPLE_SERVER_URL', RIPPLE_URL_PRODUCTION
+            buildConfigField 'String', 'CNY_ISSUING_WALLET_ADDRESS', CNY_ISSUING_WALLET_ADDRESS_PRODUCTION
+            buildConfigField 'String', 'BTC_ISSUING_WALLET_ADDRESS', BTC_ISSUING_WALLET_ADDRESS_PRODUCTION
+            buildConfigField 'String', 'BTC_TOPUP_WALLET_ADDRESS', BTC_TOPUP_WALLET_ADDRESS_PRODUCTION
+            buildConfigField 'String', 'FEELPAY_TOPUP_URL', FEELPAY_URL_PRODUCTION
+            buildConfigField 'String', 'RIPPLE_HOT_WALLET_ADDRESS', RIPPLE_HOT_WALLET_ADDRESS_PRODUCTION
+            buildConfigField 'String', 'OPENEXCHANGE_APPID', OPENEXCHANGE_APPID_PRODUCTION
+            buildConfigField 'String', 'FILEPROVIDER', FILEPROVIDER_PRODUCTION
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.name}-${variant.versionName}.apk"
+        }
+    }
+    lintOptions {
+//        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+//    externalNativeBuild {
+//        cmake {
+//            path "CMakeLists.txt"
+//        }
+//    }
+}
+
+//repositories {
+//    jcenter()
+//}
+
+def anko_version = "0.10.1"
+def android_support_library_version = "27.1.1"
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.2.41"
+    implementation "com.android.support:support-v13:$android_support_library_version"
+    implementation "com.android.support:preference-v7:$android_support_library_version"
+    implementation "com.android.support:appcompat-v7:$android_support_library_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation "com.android.support:design:$android_support_library_version"
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+    implementation 'me.pushy:sdk:1.0.31'
+    implementation 'com.bugsnag:bugsnag-android:3.+'
+    implementation "org.jetbrains.anko:anko:$anko_version"
+    debugImplementation project(path: ':ripplelibpp-debug')
+    releaseImplementation project(':ripplelibpp-release')
+    implementation 'io.reactivex:rxjava:1.2.4'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.8.0'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.2"
+    implementation 'com.github.kenglxn.QRGen:android:2.3.0'
+    implementation 'io.realm:android-adapters:2.1.0'
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.mobsandgeeks:android-saripaar:2.0.3'
+    // Lollipin
+    implementation ('com.github.orangegangsters:lollipin-ananse:2.0.0_ananse-SNAPSHOT@aar') {
+        transitive = true
+    }
+//    debugImplementation project(path: ':lollipin-lib-debug')
+//    releaseImplementation project(path: ':lollipin-lib-release')
+//    implementation 'com.github.traex.rippleeffect:ripple:1.2.3.2-OG'
+    implementation 'uk.me.lewisdeane.ldialogs:ldialogs:1.2.0@aar'
+//
+//
+//    //TypefaceView
+//    compile 'com.github.omadahealth.typefaceview:typefaceview:1.5.0@aar'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

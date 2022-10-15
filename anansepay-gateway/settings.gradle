@@ -1,0 +1,2 @@
+rootProject.name = 'anansepay-gateway'
+include 'anansepay-common','anansepay-gateway-web','anansepay-gateway-admin'

@@ -1,0 +1,100 @@
+plugins {
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '2.0.0'
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'docker'
+
+repositories {
+    jcenter()
+}
+
+def VERTX_VERSION="3.4.2"
+
+dependencies {
+    implementation project (':anansepay-common')
+//    implementation project(":anansepay-gateway-api")
+    implementation 'org.litote.kmongo:kmongo:3.4.0'
+    implementation 'org.apache.commons:commons-lang3:3.5'
+
+//    implementation files('libs/ripple-core-0.0.1-SNAPSHOT.jar')
+//    implementation files('libs/ripple-client-0.0.1-SNAPSHOT.jar')
+//    implementation files('libs/ripple-bouncycastle-0.0.1-SNAPSHOT.jar')
+    implementation group: "com.twilio.sdk", name: "twilio", version: "7.11.+"
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.7.3'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.7.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin:2.7.3'
+
+    implementation "io.vertx:vertx-core:$VERTX_VERSION"
+    implementation "io.vertx:vertx-lang-kotlin:$VERTX_VERSION"
+    implementation "io.vertx:vertx-web:$VERTX_VERSION"
+    implementation "io.vertx:vertx-web-client:$VERTX_VERSION"
+
+    implementation 'org.apache.httpcomponents:httpclient:4.5.3'
+    implementation 'commons-io:commons-io:2.5'
+
+}
+
+mainClassName = 'im.ananse.gateway.Launcher'
+def mainVerticleName = 'im.ananse.gateway.WebVerticle'
+
+jar {
+    manifest {
+        attributes 'Main-Verticle': mainVerticleName
+    }
+}
+
+shadowJar {
+    classifier = 'fat'
+    manifest {
+        attributes 'Main-Verticle': mainVerticleName
+    }
+    mergeServiceFiles {
+        include 'META-INF/services/io.vertx.core.spi.VerticleFactory'
+    }
+}
+
+// Vert.x watches for file changes in all subdirectories
+// of src/ but only for files with .java extension
+def watchForChange = ['src/**/*.java','src/**/*.kt']
+
+// Vert.x will call this task on changes
+def doOnChange
+if (System.getProperty("os.name").toLowerCase().contains("windows")) {
+    doOnChange = 'gradle classes'
+} else {
+    doOnChange = 'gradle classes'
+}
+
+//run {
+//    args = ['run', mainVerticleName, "--redeploy=$watchForChange", "--launcher-class=$mainClassName", "--on-redeploy=$doOnChange"]
+//}
+
+run {
+    args = ["run", mainVerticleName, "-conf", "src/main/conf/config.json"]
+}
+
+task buildDocker(type: Docker, dependsOn: shadowJar) {
+
+    def userHome = System.getProperty("user.home")
+
+    registry = 'gcr.io'
+    tag = 'asia.gcr.io/ananse.im/anansepay-gateway-web'
+
+    docker {
+        baseImage "java:8"
+
+        exposePort(8086)
+        runCommand("mkdir /usr/verticles")
+        addFile("build/libs/anansepay-gateway-web-fat.jar", "/usr/verticles/anansepay-gateway-web-fat.jar")
+        //addFile("src/main/docker/anansepay_home", "/usr/anansepay_home")
+        addFile("${userHome}/jks/STAR_ananse_im.jks", "/usr/verticles/STAR_ananse_im.jks")
+        workingDir("/usr/verticles")
+        entryPoint(["sh", "-c"])
+        defaultCommand(["java -jar /usr/verticles/anansepay-gateway-web-fat.jar"])
+
+    }
+
+}
