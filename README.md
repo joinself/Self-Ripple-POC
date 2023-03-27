@@ -2,6 +2,11 @@
 Self Ripple POC and Ananse Gateway
 
 
+## Wave 5
+Building on its work in Wave 4,  Self will integrate it's proof of humanity solution with the XRPL DEX alowing users to know they are interacting with real people. Self will also provide a an easy to use mobile UX for the DEX allowing anybody who has used a CEX mobile app to interact with the XRPL DEX.
+As with Self's Wave 4 integration, value exchanging transactions will be biometrically tied to verified humans.
+
+## Wave 4
 Self will use its ability to biometrically tie facts (in this case XRPL account key ownership) to individuals to allow consumers and businesses to tie real people and businesses on the Ripple network to their addresses.
 
 Self keys are signed using Self's inbuilt PKI. XRPL account keys as facts in the Self PDS can be signed, requested and transferred as with any other facts on the Self network.
