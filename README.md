@@ -2,7 +2,7 @@
 Self Ripple POC and Ananse Gateway
 
 
-## Wave 5
+## Wave 7
 Building on its work in Wave 4,  Self will integrate it's proof of humanity solution with the XRPL DEX alowing users to know they are interacting with real people. Self will also provide a an easy to use mobile UX for the DEX allowing anybody who has used a CEX mobile app to interact with the XRPL DEX.
 As with Self's Wave 4 integration, value exchanging transactions will be biometrically tied to verified humans.
 
